@@ -1,0 +1,5 @@
+<p>
+	MinDate : {{minDate}} MaxDate : {{maxDate}}
+</p>
+<input class="form-control" [(ngModel)]="date" type="date" [min]="minDate" [max]="maxDate">
+<p>{{date.errors | json}}</p>
